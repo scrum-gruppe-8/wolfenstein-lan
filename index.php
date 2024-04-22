@@ -2,11 +2,7 @@
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     include_once "backend/submitFunctions.php";
 
-    submitFunctions::insertIntoTable("paamelding", [
-        "fornavn" => $_POST['fornavn'],
-        "etternavn" => $_POST['etternavn'],
-        "email" => $_POST['email'],
-    ]);
+    submitFunctions::insertIntoTable("paamelding", $_POST);
     echo "$_POST[fornavn] $_POST[etternavn] er lagt til i databasen";
 }
 
