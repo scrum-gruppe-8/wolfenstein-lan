@@ -30,3 +30,24 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049; /* Mørkere grønn farge når hovered */
 }
+
+
+/* Generell stil for tabellen */
+table {
+    width: 100%; /* Full bredde av foreldreelementet */
+    border-collapse: collapse; /* Slå sammen celleborder */
+}
+
+/* Stil for overskriftene */
+th {
+    border: 1px solid black; /* 1 piksel grå solid ramme */
+    padding: 8px; /* Padding rundt innholdet */
+    text-align: left; /* Venstrejustert tekst */
+}
+
+/* Stil for celler */
+td {
+    border: 1px solid black; /* 1 piksel grå solid ramme */
+    padding: 8px; /* Padding rundt innholdet */
+    text-align: left; /* Venstrejustert tekst */
+}
