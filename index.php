@@ -2,8 +2,12 @@
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     include_once "backend/submitFunctions.php";
 
-    submitFunctions::insertIntoTable("paamelding", $_POST);
-    echo "$_POST[fornavn] $_POST[etternavn] er lagt til i databasen";
+    if (!empty($_POST["fornavn"]) and !empty($_POST["etternavn"] and !empty($_POST["email"]))) {
+        submitFunctions::insertIntoTable("paamelding", $_POST);
+        echo "$_POST[fornavn] $_POST[etternavn] er lagt til i databasen";
+    } else {
+        echo "Fyll inn alle felter for du trykker 'Meld Deg På'";
+    }
 }
 
 $page["title"] = "Påmelding for Wolfenstein Lan";
