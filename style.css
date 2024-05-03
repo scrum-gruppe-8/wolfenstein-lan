@@ -37,7 +37,8 @@ button[type="submit"]:hover {
 
 /* Generell stil for tabellen */
 table {
-    width: 100%; /* Full bredde av foreldreelementet */
+    width: 50%;
+    margin: auto;
     border-collapse: collapse; /* Slå sammen celleborder */
 }
 
